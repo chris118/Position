@@ -1,0 +1,7 @@
+#Mon Feb 13 15:51:18 CST 2017
+base.0=/Users/admin/source/android/Position/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_c5305dadc3a79b60178c640a319d312ceb21e7e7
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/admin/source/android/Position/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_a59c2e9fe7c4fbc3a655018e1dc369935d833663/classes.dex
+base.1=/Users/admin/source/android/Position/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_a59c2e9fe7c4fbc3a655018e1dc369935d833663
+file.0=/Users/admin/source/android/Position/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_c5305dadc3a79b60178c640a319d312ceb21e7e7/classes.dex

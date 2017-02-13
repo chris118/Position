@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/admin/source/android/Position/app/libs/tileviewlib.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1df342306902de243fa904fd811537b7da687286">
+        <dex dex="/Users/admin/source/android/Position/app/build/intermediates/transforms/dex/debug/folders/1000/2/tileviewlib_d9ae8fdfcb30f158aacbeac7eeba4799a48aac45/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/admin/source/android/Position/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/jars/libs/internal_impl-20.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
+        <dex dex="/Users/admin/source/android/Position/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-20.0.0_fbcb9dacd49c229c23acaedc2e63025f96d91e8c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/admin/source/android/Position/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8544733d5ea074bf22f847afbae01ad0bfc32f08">
+        <dex dex="/Users/admin/source/android/Position/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_a59c2e9fe7c4fbc3a655018e1dc369935d833663/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/admin/source/android/Position/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
+        <dex dex="/Users/admin/source/android/Position/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-20.0.0_c49bcc44cf94c619f8ef478f5f248b3d2738a345/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/admin/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
+        <dex dex="/Users/admin/source/android/Position/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-20.0.0_bb91f451e4bc3f7f8c7d8620db065c48a0470ad7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/admin/source/android/Position/app/libs/android-beacon-library.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="df28ff15017707162b508f2bc96637dd57f3ed72">
+        <dex dex="/Users/admin/source/android/Position/app/build/intermediates/transforms/dex/debug/folders/1000/2/android-beacon-library_91534fcdf3c755e01de456e72a255be024d59910/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/admin/source/android/Position/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1ce27ad61c822e6c3cdf5ab8ab44a1d079346741">
+        <dex dex="/Users/admin/source/android/Position/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_c5305dadc3a79b60178c640a319d312ceb21e7e7/classes.dex" />
+    </item>
+
+</items>
