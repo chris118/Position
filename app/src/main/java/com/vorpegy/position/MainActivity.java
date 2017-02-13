@@ -12,6 +12,8 @@ import android.graphics.Point;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
+import android.view.Display;
+import android.view.ViewTreeObserver;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -27,9 +29,10 @@ public class MainActivity extends Activity implements
 	private MyView mv;
 	private ImageView img;
 	private RelativeLayout container;
-	private EditText power;
-	private EditText width;
-	private EditText height;
+	private int txPower = 0;
+	private int width;
+	private int height;
+
 
 	// a, b, c, d分别为当前位置到四个ibeacon的距离
 	private int a, b, c, d;
@@ -42,14 +45,20 @@ public class MainActivity extends Activity implements
 		setContentView(R.layout.activity_main);
 
 		container = (RelativeLayout)this.findViewById(R.id.container);
-		power = (EditText)this.findViewById(R.id.power);
-		width = (EditText)this.findViewById(R.id.width);
-		height = (EditText)this.findViewById(R.id.height);
 
 		mv = new MyView(this);
 //		setContentView(mv);
 		mv.init();
 		container.addView(mv);
+		ViewTreeObserver vto2 = container.getViewTreeObserver();
+		vto2.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+			@Override
+			public void onGlobalLayout() {
+				container.getViewTreeObserver().removeGlobalOnLayoutListener(this);
+				 width = container.getWidth();
+				 height = container.getHeight();
+			}
+		});
 
 		hd.postDelayed(r, 2000);
 		init();
@@ -70,9 +79,6 @@ public class MainActivity extends Activity implements
 
 		@Override
 		public void run() {
-
-			Log.d(TAG, power.getText().toString());
-
 			mv.removeMarker(img);
 			if (a != 0 && b != 0 && c != 0 && d != 0)
 				pn = calculate(a, b, c, d);
@@ -86,6 +92,7 @@ public class MainActivity extends Activity implements
 		// TODO Auto-generated method stub
 		if (beacons != null) {
 			for (Beacon beacon : beacons) {
+				txPower = beacon.getTxPower();
 				int minor = beacon.getId3().toInt();
 				if (minor == 1) {
 					a = calculateAccuracy(beacon.getRssi());
@@ -130,7 +137,7 @@ public class MainActivity extends Activity implements
 	private int calculateAccuracy(float rssi) {
 		//根据手机型号不同，调整这个值， 拟合公式可以由厂家提供， 也可以用软件输入大量数据自己拟合
 //		int txPower = -58;
-		int txPower = Integer.parseInt(power.getText().toString());
+//		int txPower = Integer.parseInt(power.getText().toString());
 		if (rssi == 0) {
 			return (int) -1.0; // if we cannot determine accuracy, return -1.
 		}
@@ -332,10 +339,8 @@ public class MainActivity extends Activity implements
 		// + p4);
 		d(p9);
 		// 不能超过地图的最大坐标
-		int width_screen = Integer.parseInt(this.width.getText().toString());
-		int height_screen = Integer.parseInt(this.height.getText().toString());
 //		if (p9.x > 1080 || p9.x < 1 || p9.y > 1716 || p9.y < 1) //手机坐标算
-		if (p9.x > width_screen || p9.x < 1 || p9.y > height_screen || p9.y < 1) //手机坐标算
+		if (p9.x > width || p9.x < 1 || p9.y > height || p9.y < 1) //手机坐标算
 			p9 = p;
 		return p9;
 	}

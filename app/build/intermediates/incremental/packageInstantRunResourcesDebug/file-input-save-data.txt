@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Feb 13 16:24:28 CST 2017
+#Mon Feb 13 16:45:33 CST 2017
 2.base=/Users/admin/source/android/Position/app/build/intermediates/res/resources-debug.ap_
 5.file=/Users/admin/source/android/Position/app/build/intermediates/res/resources-debug.ap_/res/layout/activity_main.xml
 5.set=ANDROID_RESOURCE
