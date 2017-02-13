@@ -12,6 +12,7 @@ import android.graphics.Point;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -26,7 +27,10 @@ public class MainActivity extends Activity implements
 	private MyView mv;
 	private ImageView img;
 	private RelativeLayout container;
-	private TextView power;
+	private EditText power;
+	private EditText width;
+	private EditText height;
+
 	// a, b, c, d分别为当前位置到四个ibeacon的距离
 	private int a, b, c, d;
 	// pa, pb, pc, pd为房间四个点的坐标 pn为当前定位坐标
@@ -38,7 +42,9 @@ public class MainActivity extends Activity implements
 		setContentView(R.layout.activity_main);
 
 		container = (RelativeLayout)this.findViewById(R.id.container);
-		power = (TextView)this.findViewById(R.id.power);
+		power = (EditText)this.findViewById(R.id.power);
+		width = (EditText)this.findViewById(R.id.width);
+		height = (EditText)this.findViewById(R.id.height);
 
 		mv = new MyView(this);
 //		setContentView(mv);
@@ -326,7 +332,10 @@ public class MainActivity extends Activity implements
 		// + p4);
 		d(p9);
 		// 不能超过地图的最大坐标
-		if (p9.x > 1080 || p9.x < 1 || p9.y > 1716 || p9.y < 1) //手机坐标算
+		int width_screen = Integer.parseInt(this.width.getText().toString());
+		int height_screen = Integer.parseInt(this.height.getText().toString());
+//		if (p9.x > 1080 || p9.x < 1 || p9.y > 1716 || p9.y < 1) //手机坐标算
+		if (p9.x > width_screen || p9.x < 1 || p9.y > height_screen || p9.y < 1) //手机坐标算
 			p9 = p;
 		return p9;
 	}
