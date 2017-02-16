@@ -12,12 +12,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/admin/source/android/Position/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/jars/libs/internal_impl-20.0.0.jar"
+        jar="/Users/admin/source/android/Position/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
-        <dex dex="/Users/admin/source/android/Position/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-20.0.0_fbcb9dacd49c229c23acaedc2e63025f96d91e8c/classes.dex" />
+        sha1="e5f32fa48a3eb2de0c987025c11b6e3864b634d9">
+        <dex dex="/Users/admin/source/android/Position/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.2.0_02c6fa33a45c17cb6879c397eda0ce2438c7e764/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -25,26 +25,17 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="8544733d5ea074bf22f847afbae01ad0bfc32f08">
+        sha1="05ed5432784fed44593c78bae463ae6313f6c621">
         <dex dex="/Users/admin/source/android/Position/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_a59c2e9fe7c4fbc3a655018e1dc369935d833663/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/admin/source/android/Position/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/jars/classes.jar"
+        jar="/Users/admin/source/android/Position/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
-        <dex dex="/Users/admin/source/android/Position/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-20.0.0_c49bcc44cf94c619f8ef478f5f248b3d2738a345/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/admin/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
-        <dex dex="/Users/admin/source/android/Position/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-20.0.0_bb91f451e4bc3f7f8c7d8620db065c48a0470ad7/classes.dex" />
+        sha1="d4c936aa8c7d2522c82e3f1829c791d9e367f009">
+        <dex dex="/Users/admin/source/android/Position/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.2.0_7355d110c39f5389614aaa5e0bbfe22deb8e271a/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -57,12 +48,39 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/admin/source/android/Position/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef">
+        <dex dex="/Users/admin/source/android/Position/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-20.0.0_ae52a3deab9072368a1a191fc7be678b04a4493b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/admin/source/android/Position/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.0/jars/libs/internal_impl-23.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6e239441500605809818997dd63b62a947195f8c">
+        <dex dex="/Users/admin/source/android/Position/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.2.0_3e5f724f4321bd6bd6907e4ca833b8c12121c777/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/admin/source/android/Position/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="1ce27ad61c822e6c3cdf5ab8ab44a1d079346741">
+        sha1="d9d35ebfbf2eecd3e8a9e8afe6eba48dd3e53612">
         <dex dex="/Users/admin/source/android/Position/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_c5305dadc3a79b60178c640a319d312ceb21e7e7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/admin/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.2.0/support-annotations-23.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c5bf571bb10462bd90e5419ade67793f71acbc87">
+        <dex dex="/Users/admin/source/android/Position/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.2.0_db616d54925f3530248f8d2273f831eca0649184/classes.dex" />
     </item>
 
 </items>

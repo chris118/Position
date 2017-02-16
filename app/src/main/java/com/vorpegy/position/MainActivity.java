@@ -8,6 +8,7 @@ import org.altbeacon.beacon.Beacon;
 import org.altbeacon.beacon.Region;
 
 import android.app.Activity;
+import android.content.Context;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.os.Handler;
@@ -18,6 +19,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.vorpegy.position.LocationApplication.onRangeBeaconsInRegionListener;
 
@@ -29,6 +31,7 @@ public class MainActivity extends Activity implements
 	private MyView mv;
 	private ImageView img;
 	private RelativeLayout container;
+	private TextView debug_tv;
 	private int txPower = 0;
 	private int width;
 	private int height;
@@ -38,13 +41,20 @@ public class MainActivity extends Activity implements
 	private int a, b, c, d;
 	// pa, pb, pc, pd为房间四个点的坐标 pn为当前定位坐标
 	private Point pa, pb, pc, pd, pn;
+	private Point pcenter;
+
+	private ArrayList<Beacon> selectedBeacons;
+	private Context mContext;
+	private String debugString;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
+		mContext = this;
 		container = (RelativeLayout)this.findViewById(R.id.container);
+		debug_tv = (TextView) this.findViewById(R.id.debugInfo);
 
 		mv = new MyView(this);
 //		setContentView(mv);
@@ -72,6 +82,15 @@ public class MainActivity extends Activity implements
 		pc = new Point(0, 50);
 		pd = new Point(50, 0);
 		pn = new Point(0, 0);
+
+		pcenter = new Point(50, 50);
+		//计算质心坐标
+
+		selectedBeacons = new ArrayList<Beacon>();
+		Bundle bundle = getIntent().getExtras();
+		selectedBeacons = bundle.getParcelableArrayList("beacons");
+		if(selectedBeacons != null) {
+		}
 	}
 
 	Handler hd = new Handler();
@@ -89,26 +108,38 @@ public class MainActivity extends Activity implements
 
 	@Override
 	public void onRangeBeaconsInRegion(Collection<Beacon> beacons, Region region) {
-		// TODO Auto-generated method stub
-		if (beacons != null) {
-			for (Beacon beacon : beacons) {
-				txPower = beacon.getTxPower();
-				int minor = beacon.getId3().toInt();
-				if (minor == 1) {
-					a = calculateAccuracy(beacon.getRssi());
-				}
-				if (minor == 2) {
-					b = calculateAccuracy(beacon.getRssi());
-				}
-				if (minor == 3) {
-					c = calculateAccuracy(beacon.getRssi());
-				}
-				if (minor == 4) {
-					d = calculateAccuracy(beacon.getRssi());
-				}
-			}
-
+		if(beacons.size() < 3){
+			return;
 		}
+		debugString = "";
+		for (Beacon beacon : beacons) {
+			txPower = beacon.getTxPower();
+			int minor = beacon.getId3().toInt();
+			if (minor == selectedBeacons.get(0).getId3().toInt()) {
+				a = calculateAccuracy(beacon.getRssi());
+				debugString += "a = " +  String.valueOf(a) + "\n";
+			}
+			if (minor == selectedBeacons.get(1).getId3().toInt()) {
+				b = calculateAccuracy(beacon.getRssi());
+				debugString += "b = " +  String.valueOf(b) + "\n";
+			}
+			if (minor == selectedBeacons.get(2).getId3().toInt()) {
+				c = calculateAccuracy(beacon.getRssi());
+				debugString += "c = " +  String.valueOf(c) + "\n";
+			}
+//				if (minor == selectedBeacons.get(3).getId3().toInt()) {
+//					d = calculateAccuracy(beacon.getRssi());
+//					debugString += "d " +  String.valueOf(d) + "\n";
+//				}
+		}
+
+		runOnUiThread(new Runnable() {
+			@Override
+			public void run() {
+				debug_tv.setText(debugString);
+			}
+		});
+
 	}
 
 	@Override

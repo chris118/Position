@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:2:1-53:12
+ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:2:1-54:12
 	package
 		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:3:5-35
 		INJECTED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml
@@ -15,95 +15,104 @@ ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:2:11-69
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:7:5-81
-	android:name
-		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:7:22-78
-uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:8:5-80
-	android:name
-		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:8:22-77
-uses-permission#android.permission.BLUETOOTH
-ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:9:5-68
-	android:name
-		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:9:22-65
-uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:10:5-74
-	android:name
-		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:10:22-71
 uses-sdk
-ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:12:5-14:41
-MERGED from [com.android.support:support-v4:20.0.0] /Users/admin/source/android/Position/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/AndroidManifest.xml:16:5-42
+ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:recyclerview-v7:23.2.0] /Users/admin/source/android/Position/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.2.0] /Users/admin/source/android/Position/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:20.0.0] /Users/admin/source/android/Position/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/AndroidManifest.xml:16:5-42
 	android:targetSdkVersion
-		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:14:9-38
+		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:9:9-38
 		INJECTED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:13:9-35
+		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:8:9-35
 		INJECTED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:11:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:12:5-80
+	android:name
+		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:12:22-77
+uses-permission#android.permission.BLUETOOTH
+ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:13:5-68
+	android:name
+		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:13:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:14:5-74
+	android:name
+		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:14:22-71
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:15:5-75
+	android:name
+		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:15:22-72
 application
-ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:16:5-51:19
-MERGED from [com.android.support:support-v4:20.0.0] /Users/admin/source/android/Position/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/AndroidManifest.xml:17:5-19
+ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:17:5-52:19
+MERGED from [com.android.support:support-v4:23.2.0] /Users/admin/source/android/Position/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:20.0.0] /Users/admin/source/android/Position/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/AndroidManifest.xml:17:5-19
 	android:label
-		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:20:9-41
+		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:21:9-41
 	android:allowBackup
-		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:18:9-35
+		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:19:9-35
 	android:icon
-		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:19:9-45
+		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:20:9-45
 	android:theme
-		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:21:9-40
+		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:22:9-40
 	android:name
-		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:17:9-43
-activity#com.vorpegy.position.MainActivity
-ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:22:9-30:20
-	android:label
-		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:24:13-45
+		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:18:9-44
+activity#com.vorpegy.position.DevicesActivity
+ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:25:9-30:20
 	android:name
-		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:23:13-41
+		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:25:19-50
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:25:13-29:29
+ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:26:13-29:29
 action#android.intent.action.MAIN
-ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:26:17-69
+ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:27:17-69
 	android:name
-		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:26:25-66
+		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:27:25-66
 category#android.intent.category.LAUNCHER
 ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:28:17-77
 	android:name
 		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:28:27-74
+activity#com.vorpegy.position.MainActivity
+ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:32:9-49
+	android:name
+		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:32:19-47
 receiver#org.altbeacon.beacon.startup.StartupBroadcastReceiver
-ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:32:9-38:20
+ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:34:9-40:20
 	android:name
-		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:32:19-87
+		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:34:19-87
 intent-filter#android.intent.action.ACTION_POWER_CONNECTED+android.intent.action.ACTION_POWER_DISCONNECTED+android.intent.action.BOOT_COMPLETED
-ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:33:13-37:29
+ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:35:13-39:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:34:17-79
+ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:36:17-79
 	android:name
-		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:34:25-76
+		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:36:25-76
 action#android.intent.action.ACTION_POWER_CONNECTED
-ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:35:17-87
+ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:37:17-87
 	android:name
-		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:35:25-84
+		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:37:25-84
 action#android.intent.action.ACTION_POWER_DISCONNECTED
-ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:36:17-90
+ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:38:17-90
 	android:name
-		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:36:25-87
+		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:38:25-87
 service#org.altbeacon.beacon.service.BeaconService
-ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:40:9-46:19
+ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:42:9-47:46
 	android:enabled
-		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:42:13-35
+		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:44:13-35
 	android:label
-		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:45:13-35
+		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:47:13-35
 	android:exported
-		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:43:13-37
+		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:45:13-37
 	android:isolatedProcess
-		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:44:13-44
+		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:46:13-44
 	android:name
-		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:41:13-70
+		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:43:13-70
 service#org.altbeacon.beacon.BeaconIntentProcessor
-ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:47:9-50:19
+ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:48:9-50:46
 	android:enabled
-		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:49:13-35
+		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:50:13-35
 	android:name
-		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:48:13-70
+		ADDED from /Users/admin/source/android/Position/app/src/main/AndroidManifest.xml:49:13-70

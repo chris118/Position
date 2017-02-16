@@ -1,4 +1,4 @@
-#Mon Feb 13 16:42:27 CST 2017
+#Thu Feb 16 10:50:37 CST 2017
 base.0=/Users/admin/source/android/Position/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_c5305dadc3a79b60178c640a319d312ceb21e7e7
 renamed.1=classes.dex
 renamed.0=classes2.dex
